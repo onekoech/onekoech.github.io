@@ -1,0 +1,670 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=0.7">
+
+	<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+    $(".menu_icon").click(function(){
+        $("header nav ul").toggleClass("open");
+    });
+});
+</script>
+
+
+
+<style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+html {
+   font-family: "Lucida Sans", sans-serif;
+
+}
+.wrapper{
+height:300px;
+background-color:#340012;
+}
+.menu_icon{
+display:block;
+height:60px;
+width:100%;
+background:url("threelines.png") no-repeat 98% center;
+background-size : 80px 60px ;
+background-repeat : no-repeat ;
+
+}
+.arrow_icon{
+height:40px;
+width:100%;
+background:url("threelines.png") no-repeat 98% center;
+background-size : 30px 30px ;
+background-repeat : no-repeat ;
+
+}
+
+header ul{
+list-style:none;
+text-decoration:none;
+background-color:#red;
+}
+header nav ul li{
+float:none;
+text-align:left;
+margin:0px;
+width:100%;
+}
+
+header nav ul li a{
+color: #e1e1e1;
+padding:10px;
+display:block;
+margin:0;
+text-align:left;
+text-decoration:none;
+}
+header nav ul{
+overflow:hidden;
+background:#505050;
+width:98%;
+position:absolute;
+height:0;
+margin:0;
+
+}
+header nav ul.open{
+height:auto;
+}
+.tiny ul{
+list-style:none;
+text-decoration:none;
+display:block;
+background-color:#red;
+}
+.tiny ul li{
+float:none;
+text-align:left;
+margin:0px;
+width:100%;
+}
+
+.tinyul li a{
+color: #e1e1e1;
+margin:0;
+text-align:left;
+text-decoration:none;
+}
+.tiny ul{
+overflow:hidden;
+background:#505050;
+height:auto;
+}
+.tiny ul.open{
+height:0;
+}
+header{
+height:80px;
+background-color:#949494;
+width:100%;
+color: #f1684e;
+}
+
+.header_container{
+height:900px;
+background-color:#1c1c1c;
+background:linear-gradient(top, #b2cecf, #cacaca);         
+background:-moz-linear-gradient(top, #b2cecf, #cacaca);         
+background:-webkit-linear-gradient(top, #b2cecf, #cacaca);         
+background:-o-linear-gradient(top, #b2cecf, #cacaca);         
+background:-ms-linear-gradient(top, #b2cecf, #cacaca); 
+background: linear-gradient( to bottom, #4eb1ba,#cacaca)
+
+}
+
+.message_1_box{
+  height:100px;
+  color:red;
+  }
+.message_1{
+margin-top:140px;
+line-height:10%;
+word-spacing:1px;
+text-align:center;
+height: 200px;
+font-family: "heltica";
+font-size: 60px;
+color:#1a1a1e;
+//background-color: #d02552;
+}
+.message_1 p:first-child{
+padding-top:20px;
+}
+.message_2{
+height:80px;
+//background-color:#4eb1ba;
+font-family:"heltica";
+font-size: 22px;
+color:#1e1e2b;
+}
+.message_2 p{
+text-align:center;
+text-type:bold;
+
+}
+
+.dad{
+margin-top:0px;
+height:650px;
+background-color:#1c1c1c;
+background-color:#1c1c1c;
+background:linear-gradient(top, #b2cecf, #cacaca);         
+background:-moz-linear-gradient(top, #b2cecf, #cacaca);         
+background:-webkit-linear-gradient(top, #b2cecf, #cacaca);         
+background:-o-linear-gradient(top, #b2cecf, #cacaca);         
+background:-ms-linear-gradient(top, #b2cecf, #cacaca); 
+background: linear-gradient( to top, #4eb1ba,#cacaca);
+
+}
+.dad img{
+width:100%;
+height:650px;
+position:relative;
+}
+.sign_up_button{
+box-shadow:5px 5px 5px #888;
+border-radius:5px 5px 5px 5px;
+height: 70px;
+width: 60%;
+text-align: center;
+padding-top: 10px;
+background-color:#1c8a93;
+font-family:"heltica";
+font-size:32px;
+color:#0288ad;
+margin-left: 20%;
+}
+.sign_up_button a{
+color: #eeeeee;
+padding-top:20px;
+text-align:center;
+text-decoration:none;
+padding-top:15px;
+}
+.sign_up_pic{
+height:400px;
+background:url("pope.jpg");
+}
+.message_3{
+height: 400px;
+background-color:#e2e2e2;
+}
+.message_3_banner{
+height:80px;
+font-family:"heltica";
+text-align: centre;
+font-size:30px;
+color:#151515;
+width:70%;
+margin-left:15%;
+}
+.message_3_banner p{
+text-align:center;
+}
+.message_3_box{
+font-family:"heltica";
+font-size:18px;
+color:#121212;
+line-height:180%;
+height:200px;
+text-align:center;
+}
+.nav-bar{
+height:200px;
+background-color:#e2e2e2;
+}
+
+
+
+
+!//////////////
+
+.menu ul,
+.menu li,
+.menu a {
+border : none;
+outline : none;
+}
+.menu li {
+position: relative;
+list-style : none;
+float: left ;
+display : inline;
+height : 100px ;
+width:22%;
+#background-color:#8fde62;
+
+}
+img{
+width:30px;
+height:30px;
+}
+
+
+.menu li a {
+display : block;
+text-decoration : none;
+font-family : Helvetica, Arial, sans-serif;
+font-weight : bold ;
+font-size : 13px ;
+text-align:center;
+padding-top:10px;
+color : #535353 ;
+text-shadow : 1px 1px 1px rgba( 0 , 0 , 0 ,. 6 );
+-webkit-transition: color .2 s ease-in-out;
+-moz-transition: color . 2s ease-in-out;
+-o-transition: color .2 s ease-in-out;
+-ms-transition: color .2 s ease-in-out;
+transition: color . 2s ease-in-out;
+}
+
+#menu a.documents { background: url (../web3.png) no-repeat 6px center; }
+#.menu a.messages { background: url(../web1.png) no-repeat 6px center; }
+#.menu a.signout { background: url (../web5.png) no-repeat 6px center; }
+.menu ul li:last-child a { border : none ; }
+.menu li:first-child a { border-left : none; }
+.menu li:last-child a{ border-right : none; }
+.menu li:hover > a { color : #8fde62 ; }
+//////////////////////
+
+blue{
+height:150px;
+background-color:#77ace2;
+}
+.blue1{
+height:150px;
+background-color:#77ace2;
+width:30%;
+float:left;
+font-family:"batang";
+font-size:32px;
+line-height:10%;
+text-align:center;
+}
+.blue1 p{
+font-size:60px;
+color:#e1e1e1;
+text-type:bold;
+line-height:7%;
+text-align:center;
+}
+
+.blue1 p:last-letter{
+color:red;
+}
+.pink{
+color:#fb52
+}
+.blue2{
+height:150px;
+background-color:#77ace2;
+width:100%;
+#float:left;
+font-family:"batang";
+font-size:24px;
+}
+.blue2 p{
+padding-top:10px;
+font-size:22px;
+color:#121212;
+}
+
+///////////////////
+	
+.message_4{
+height: 400px;
+background-color:#e2e2e2;
+}
+.message_4_banner{
+height:120px;
+font-family:"heltica";
+text-align: centre;
+font-size:30px;
+color:#151515;
+width:70%;
+margin-left:5%;
+}
+.message_4_banner p{
+text-align:left;
+}
+.message_4_box{
+margin-left:5%;
+font-family:"heltica";
+font-size:18px;
+color:#121212;y
+line-height:180%;
+height:200px;
+text-align:justify;
+}
+
+////////////////
+
+	
+.message_5{
+height: 900px;
+background-color:#666600;
+}
+.message_5_banner{
+height:120px;
+font-family:"heltica";
+text-align: centre;
+font-size:30px;
+color:#151515;
+width:70%;
+margin-left:15%;
+}
+.message_5_banner p{
+text-align:center;
+}
+.message_5_box{
+
+font-family:"heltica";
+font-size:18px;
+color:#121212;
+
+height:350px;
+
+}
+
+.small_box ul,
+.small_box li,
+.small_box a {
+border : none;
+outline : none;
+}
+.small_box li {
+position: relative;
+list-style : none;
+float: left ;
+display : inline;
+height : 100px ;
+width:47%;
+margin-bottom:10px;
+#background-color:#8fde62;
+}
+.small_box li:first-child { margin-right:5%; }
+
+.micro_box1 { 
+width:30%;
+height:100px;
+#background-color:blue;
+float:left;
+}
+.micro_box1 img{
+height: 70%;
+width:100%;
+padding:auto;
+}
+.micro_box2{ 
+width:70%;
+height:100px;
+#background-color:yellow;
+float:left;
+font-family:"batang";
+font-size:20px;
+text-align:center;
+}
+.blue_relationship{
+height:600px;
+background-color:#03363d;
+font-family:"batang";
+font-size:40px;
+#line-height:20%;
+color:#e1e1e1;
+text-align:center;
+padding-top:70px;
+text-weight:bold;
+}
+.sign_up2{
+height:100px;
+background: #31aacc;
+background: -webkit-linear-gradient( top , #1262de 0% , ##00ACE9 100% );
+background: -moz-linear-gradient( top, ##00ACE9 0% , #2c2d33 100% );
+background: -o-linear-gradient( top, ##00ACE9 0% , #2c2d33 100% );
+background: -ms-linear-gradient( top , ##00ACE9 0%, #2c2d33 100% );
+background: linear-gradient( top, ##00ACE9 0% , #2c2d33 100% );
+color:#121212;
+text-family:"batang";
+font-size:32px;
+text:align:center;
+width:60%;
+margin-left:20%;
+padding-top:20px
+}
+
+.footer{
+height:400px;
+background-color:#e1e1e1;
+color:#121212;
+font-family:"batang";
+}
+.footer_sub{
+height:30px;
+width:20%;
+text-aling:center;
+padding-top:3px;
+font-size:12px;
+float:left;
+margin-top:380px;
+
+}
+.footer_sub:first-child{
+margin-left:10%;
+}
+.footer_sub a{
+text-decoration:none;
+color:#121212;
+
+}
+.tiny{
+height:90px;
+background:#3a88c0;
+z-index:1;
+}
+
+.tiny1{
+height:40px;
+background:#3a88c0;
+border-bottom:1px solid #a1a1a1;
+}
+.contain_ul{
+width:100%;
+height:auto;
+background:red;
+//display:hidden;
+}
+.conntain_ul.visible{
+display:visible;
+}
+</style>
+
+
+  
+</head>
+<body>
+ 
+ 
+ <div class="header_container">
+  <header>
+	
+	<nav>
+	  <a class="menu_icon"></a>
+	  <div class="contain_ul">
+	  <ul>
+		<li><div class="tiny"><a href="#">about us</a></div></li>
+		<li><div class="tiny"><a href="#">events</a></div></li>
+		<li><div class="tiny"><a href="#" style="float:left">ministries</a><a class="arrow_icon"></a></div></li>
+		  <!--
+		     <ul>
+			   <li><div class="tiny0"><a href="#">clubs</a></div></li>
+			   <li><div class="tiny0"><a href="#">evangelism</a></div></li>
+			   <li><div class="tiny0"><a href="#">forum</a></div></li>
+			   <li><div class="tiny0"><a href="#">contact us</a></div></li>
+			 </ul>
+			 !-->
+		   
+		
+	
+		<li><div class="tiny"><a href="#">clubs</a></div></li>
+		<li><div class="tiny"><a href="#">evangelism</a></div></li>
+		<li><div class="tiny"><a href="#">forum</a></div></li>
+		<li><div class="tiny"><a href="#">contact us</a></div></li>
+	  </ul>
+	  </div>
+	</nav>
+	
+	
+  </header>
+   <div class="message_1_box">
+    <div class="message_1"><p>We fan the</p><p>flame</p></div>
+    <div class="message_2"><p>Concert family celebrates gifts and talents</p>
+	                       <p>for God's glory</p>
+    </div>
+    </div>
+
+ </div>
+  <div class="dad">
+	
+	<div class="sign_up_button"><a href="fast.html">sign up to join</a> </div>
+    
+  </div>
+   
+  
+ <div class="message_3">
+   <div class="message_3_banner"><p>Walking together in faith</p></div>
+   <div class="message_3_box">The life of a christian is full  of strain and  difficilties. This is even amplified for a campus christian.The precious treasure that is salvation in christ may be traded with the perishable wares of this world. In concert family, we walk together building up one another and equiping ourselves to best meet the challenges of the campus life</div> 
+ </div>
+  <div class="nav-bar">
+	<ul class ="menu" >
+	  <li ><a href= "#" ><img src="web1.png" alt="Paris"><p>My dashboard</p></a ></li>
+	  <li ><a href= "#" ><img src="web2.png" alt="Paris"><p>Likes</p></a></li >
+	  <li ><a href= "#" ><img src="web5.png" alt="Paris"><p>Views</p></a ></li>
+	  <li ><a href= "#" ><img src="web4.png" alt="Paris"><p>Uploads</p></a></li >
+	 
+    </ul>
+	
+	<ul class ="menu" >
+	  <li  style="margin-left:10%"><a href= "#" ><img src="web1.png" alt="Paris"><p>My dashboard</p></a ></li>
+	  <li ><a href= "#" ><img src="web2.png" alt="Paris"><p>Likes</p></a></li >
+	  <li ><a href= "#" ><img src="web5.png" alt="Paris"><p>Views</p></a ></li>
+    </ul>
+  </div>
+  <div class="blue">
+	<div class="blue1"><p>2<span class="pink">01</span>7</p>
+	  THEME
+	</div>
+	<div class="blue2"><p>UNCONDITIONAL LOVE</p></div>
+  </div>
+  
+  <div class="message_4">
+	<div class="message_4_banner"><p>Walking together in faith</p></div>
+	<div class="message_4_box">The life of a christian is full  of strain and  difficilties. This is even amplified for a campus christian.The precious treasure that is salvation in christ may be traded with the perishable wares of this world. In concert family, we walk together building up one another and equiping ourselves to best meet the challenges of the campus life</div> 
+  </div>
+  
+  <div class="message_4">
+	<div class="message_4_banner"><p>Walking together in faith</p></div>
+	<div class="message_4_box">The life of a christian is full  of strain and  difficilties. This is even amplified for a campus christian.The precious treasure that is salvation in christ may be traded with the perishable wares of this world. In concert family, we walk together building up one another and equiping ourselves to best meet the challenges of the campus life</div> 
+  </div>
+  <div class="message_4">
+	<div class="message_4_banner"><p>Walking together in faith</p></div>
+	<div class="message_4_box">The life of a christian is full  of strain and  difficilties. This is even amplified for a campus christian.The precious treasure that is salvation in christ may be traded with the perishable wares of this world. In concert family, we walk together building up one another and equiping ourselves to best meet the challenges of the campus life</div> 
+  </div>
+  
+  <div class="message_5">
+	<div class="message_5_banner"><p>Our family extends to these campuses</p></div>
+	<div class="message_5_box">
+	
+	  <ul class ="small_box" >
+		
+		<li >
+		    
+		  <div class="micro_box1" >  <img src="web1.png" alt="Paris"></div>
+			  <div class="micro_box2" >Moi University School of Law</div>
+		</li>
+		<li >
+		  <div class="micro_box1" ><img src="web1.png" alt="Paris"></div>
+		      <div class="micro_box2" >Moi University West Campus</div>
+		</li>
+	  </ul>
+	  
+
+	  <ul class ="small_box" >
+	  <li >
+
+		<div class="micro_box1" ><img src="web1.png" alt="Paris"> </div>
+		<div class="micro_box2" >Moi University Main Campus</div>
+	  </li>
+	  <li >
+		<div class="micro_box1" ><img src="web1.png" alt="Paris"> </div>
+		<div class="micro_box2" >University of Eldoret</div>
+	  </li>
+	  </ul>
+	  
+	  
+
+	  <ul class ="small_box" >
+	  <li >
+
+		<div class="micro_box1" >  <img src="web1.png" alt="Paris"></div>
+		<div class="micro_box2" >Moi University Town Campus</div>
+	  </li>
+	  <li >
+		<div class="micro_box1" ><img src="web1.png" alt="Paris"></div>
+		<div class="micro_box2" >Moi Univetsity School of Medicine</div>
+	  </li>
+	  </ul>
+	  
+	  
+	 </div> 
+   </div>
+  <div class="blue_relationship"><p>This could be the </p><p>begining of a </p><p>beautiful relationship</p>
+	<div class="sign_up2">Sign up to Join</div>
+  </div>
+  <div class="footer">
+	<div class="footer_sub"><a href="#">Terms of Use</a></div>
+	<div class="footer_sub"><a href="#">Privacy Policy</a></div>
+	<div class="footer_sub"><a href="#">Cookie Policy</a></div>
+	<div class="footer_sub"><a href="#">©Concert2017</a></div>
+	
+  </div>
+  
+  
+</body>
+
+
+   <script type="text/javacsript" src="/js/scripts.js"></script>
+  <script type="text/javacsript"  src="menu.js"></script>
+</html>
+
